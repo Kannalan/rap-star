@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#03A9F4</item>
+        <item name="colorPrimaryDark">#0288D1</item>
+        <item name="colorAccent">#2fa881</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <!-- 进入当前页面时，前后两个页面动画是否同步执行？-->
+        <item name="android:windowAllowEnterTransitionOverlap" tools:targetApi="lollipop">true</item>
+        <!-- 退出当前页面时，前后两个页面动画是否同步执行？-->
+        <item name="android:windowAllowReturnTransitionOverlap" tools:targetApi="lollipop">true</item>
+        <!--<item name="android:windowEnterTransition" tools:targetApi="lollipop">@transition/fade</item>
+        <item name="android:windowExitTransition">@transition/fade</item>-->
+        <!-- set Can use Activity transitions
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>-->
+    </style>
+    <style name="Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">#0288D1</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+    <style name="TextLabel" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlActivated">#FFCC00</item>
+    </style>
+</resources>
