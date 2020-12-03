@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/song_item"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/acc_item_pho"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="249dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/acc_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MONST3ER-Demo"
+            android:textColor="#583f64"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/acc_item_author"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="-ATEEZ"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/listen" />
+
+            <TextView
+                android:id="@+id/acc_item_lisnum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1167"
+                android:textColor="#cac7c7" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/acc_item_start"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/start"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"/>
+</LinearLayout>

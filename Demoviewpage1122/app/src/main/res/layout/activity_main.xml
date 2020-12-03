@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="100dp"
+                android:clipChildren="false"
+                android:layerType="software">
+
+            </androidx.viewpager.widget.ViewPager>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="260dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="220dp"
+        fab:fab_addButtonColorNormal="#583F64"
+        fab:fab_labelStyle="@style/floatingActionsMenu_fab_style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#583F64"
+            fab:fab_icon="@drawable/ktv"
+            fab:fab_size="normal"
+            fab:fab_title="去清唱" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#583F64"
+            fab:fab_icon="@drawable/update"
+            fab:fab_size="normal"
+            fab:fab_title="上传伴奏" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    <LinearLayout
+        android:layout_marginTop="450dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="热门伴奏"
+            android:textSize="20dp"
+            android:textColor="#583f64"
+            android:textStyle="bold"/>
+    <ListView
+        android:id="@+id/acc_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@null" />
+    </LinearLayout>
+
+</RelativeLayout>
