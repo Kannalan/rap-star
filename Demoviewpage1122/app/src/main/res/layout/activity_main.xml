@@ -12,8 +12,43 @@
                 android:layout_marginLeft="100dp"
                 android:clipChildren="false"
                 android:layerType="software">
+    </androidx.viewpager.widget.ViewPager>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
 
-            </androidx.viewpager.widget.ViewPager>
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Abstract"
+            android:rotation="270"/>
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_width="100dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="Freestyle"
+            android:rotation="270"/>
+        <TextView
+            android:layout_marginTop="66dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Comedy"
+            android:rotation="270"/>
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Crunk"
+            android:rotation="270"/>
+    </LinearLayout>
     <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/fab_menu"
         android:layout_width="40dp"
